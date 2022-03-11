@@ -15,10 +15,10 @@ int main(void)
 		if ((d != 'e') && (d != 'q'))
 		{
 			putchar(d);
-			c++;
+			d++;
 		}
 		else
-			c++
+			d++
 	}
 	putchar('\n');
 	return (0);
