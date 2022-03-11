@@ -18,7 +18,7 @@ int main(void)
 			d++;
 		}
 		else
-			d++
+			d++;
 	}
 	putchar('\n');
 	return (0);
