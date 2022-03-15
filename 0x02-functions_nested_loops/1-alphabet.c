@@ -6,6 +6,6 @@
 void print_alphabet(void)
 {
 	for (sl = 'a'; sl <= 'z'; sl++)
-		putchar (sl);
-		putchar (\n);
+		_putchar (sl);
+		_putchar (\n);
 }
