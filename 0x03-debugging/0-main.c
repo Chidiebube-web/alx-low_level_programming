@@ -3,7 +3,7 @@
 /**
  * main - Prints the different numbers at different occurrences
  *
- * return: 0
+ * Return: 0
  */
 int main(void)
 {
