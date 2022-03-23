@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _strcat - concatenates two strings
- * @dest: string to append to
- * @src: string to add
+ * @dest: string to be appended
+ * @src: string to be added
  *
  * Return: a pointer to the resulting string
  */
