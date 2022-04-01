@@ -1,3 +1,4 @@
+#!/bin/bash
 !<arch>
 main.h/         0           0     0     644     650       `
 int _putchar(char c);
