@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - his prints the number of arguments 
+ * main - his prints the number of arguments
  * passed to it
  * @argc: integer
  * @argv: char
@@ -9,7 +9,6 @@
  */
 int main(int argc, char **argv[] __attribute__((unused)))
 {
-	if (argc => 1)
-		printf("%d\n", argc - 1);
+	printf("%d\n", argc - 1);
 	return (0);
 }
