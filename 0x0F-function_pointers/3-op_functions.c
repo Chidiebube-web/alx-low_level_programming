@@ -1,31 +1,61 @@
-#include "3-calc.h"
-#include <string.h>
+/**
+ * op_add - Add two integers
+ *
+ * @a: Integer 1
+ * @b: Integer 2
+ *
+ * Return: Integer
+ */
+int op_add(int a, int b)
+{
+	return (a + b);
+}
 
 /**
- * get_op_func - selects the correct operation toperform
- * @s: operation to perform
+ * op_sub - Sub two integers
  *
- * Return: pointer to the correct function
+ * @a: Integer 1
+ * @b: Integer 2
+ *
+ * Return: Integer
  */
-int (*get_op_func(char *s))(int, int)
+int op_sub(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-int i = 0;
-
-	while (ops[i].op != NULL)
-	{
-		if (strcmp(s, ops[i].op) == 0)
-		{
-			return (ops[i].f);
-		}
-		i++;
-	}
-	return (NULL);
+	return (a - b);
+}
+/**
+ * op_mul - Product of two integers
+ *
+ * @a: Integer 1
+ * @b: Integer 2
+ *
+ * Return: Integer
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+/**
+ * op_div - Result of the dividion os two integers
+ *
+ * @a: Integer 1
+ * @b: Integer 2
+ *
+ * Return: Integer
+ */
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+/**
+ * op_mod - Remainder of the division
+ *
+ * @a: Integer 1
+ * @b: Integer 2
+ *
+ * Return: Integer
+ */
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
