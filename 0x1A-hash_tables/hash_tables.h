@@ -39,10 +39,13 @@ hash_table_t *hash_table_create(unsigned long int size);
 unsigned long int hash_djb2(const unsigned char *str);
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
+void hash_table_print(const hash_table_t *ht);
 
 void replace_value(hash_node_t **ht, const char *key, const char *value);
 int check_key(hash_node_t *ht, const char *key);
 hash_node_t *add_node(hash_node_t **head, const char *key, const char *value);
 char *hash_table_get(const hash_table_t *ht, const char *key);
+void print_list(hash_node_t *h);
+
 
 #endif
