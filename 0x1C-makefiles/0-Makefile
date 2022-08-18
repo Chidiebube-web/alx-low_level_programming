@@ -1,9 +1,2 @@
-output: main.o school.o
-	g++ main.o school.o -o school
-main.o: main.c
-	g++ -c main.c
-school.o: school.c m.h
-	g++ -c school.c
-clean:
-	@echo "Cleaning up..."
-	rm *.o school
+all:
+	gcc main.c school.c school
